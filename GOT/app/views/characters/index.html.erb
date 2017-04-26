@@ -1,0 +1,8 @@
+<h1>Those that Seek the Throne</h1>
+<% @characters.each do |character| %>
+<div>
+    <%= link_to character, characters_path(character) %>
+    -
+    <%= character.house.name %>
+</div>
+<% end %>
